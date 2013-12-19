@@ -1,5 +1,6 @@
 (require-package 'auto-complete)
 (require-package 'auto-complete-clang)  ;clang package for c/c++ completion
+(require-package 'ac-c-headers)         ;AC source for c headers
 (require 'auto-complete-config)
 (global-auto-complete-mode t)
 (setq-default ac-expand-on-auto-complete nil)
@@ -61,7 +62,8 @@
 ;; @see https://github.com/brianjcj/auto-complete-clang
 (defun my-ac-cc-mode-setup ()
   (require 'auto-complete-clang)
-  (setq ac-sources (append '(ac-source-clang) ac-sources)))
+  (require 'ac-c-headers)               ;ac sources for c headers completion, see https://github.com/zk-phi/ac-c-headers
+  (setq ac-sources (append '(ac-source-clang ac-source-c-headers) ac-sources)))
 (add-hook 'c-mode-common-hook 'my-ac-cc-mode-setup)
 (add-hook 'auto-complete-mode-hook 'ac-common-setup)
 
