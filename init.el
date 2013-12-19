@@ -76,6 +76,7 @@
 (require 'init-clojure)
 (require 'init-common-lisp)
 (require 'init-yasnippet)
+(require 'init-eim)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
