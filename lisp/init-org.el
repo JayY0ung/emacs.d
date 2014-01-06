@@ -19,8 +19,12 @@
       org-agenda-window-setup 'current-window
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t
-      org-tags-column 30)
+      org-tags-column 30
+      org-directory "~/myWorkflow")
 
+;;; Setting up a capture location
+(setq org-default-notes-file (concat org-directory "/notes.org"))
+(define-key global-map "\C-cc" 'org-capture)
 
 ; Refile targets include this file and any file contributing to the agenda - up to 5 levels deep
 (setq org-refile-targets (quote ((nil :maxlevel . 5) (org-agenda-files :maxlevel . 5))))
