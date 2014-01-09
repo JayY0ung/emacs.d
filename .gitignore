@@ -27,4 +27,4 @@ site-lisp/package/
 /.achievements
 /.bookmarks.el
 site-lisp/
-history
+/history
