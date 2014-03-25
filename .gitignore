@@ -28,3 +28,4 @@ site-lisp/package/
 /.bookmarks.el
 site-lisp/
 /history
+/helm-adaptive-history
