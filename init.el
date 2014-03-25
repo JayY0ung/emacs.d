@@ -90,6 +90,7 @@
 
 (require 'init-dash)
 (require 'init-ledger)
+(require 'init-run-current-file)        ; fast run script files, keybinding `F8'
 ;; Extra packages which don't require any configuration
 
 (require-package 'gnuplot)
