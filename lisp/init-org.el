@@ -20,7 +20,7 @@
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t
       org-tags-column 30
-      org-directory "~/myWorkflow")
+      org-directory "~/org")
 
 ;;; Setting up a capture location
 (setq org-default-notes-file (concat org-directory "/notes.org"))
