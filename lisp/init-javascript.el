@@ -36,8 +36,8 @@
       js2-auto-indent-p t
       js2-bounce-indent-p nil)
 
-;; (after-load 'js2-mode
-;;   (js2-imenu-extras-setup))
+(after-load 'js2-mode
+  (js2-imenu-extras-setup))
 
 ;; js-mode
 (setq js-indent-level preferred-javascript-indent-level)
