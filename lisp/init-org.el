@@ -22,6 +22,9 @@
       org-tags-column 30
       org-directory "~/org")
 
+;;; highlight lines that go over 80 chars
+(add-hook 'org-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-green)))
+
 ;;; Setting up a capture location
 (setq org-default-notes-file (concat org-directory "/notes.org"))
 (define-key global-map "\C-cc" 'org-capture)
