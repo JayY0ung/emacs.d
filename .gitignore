@@ -29,3 +29,5 @@ site-lisp/package/
 site-lisp/
 /history
 /helm-adaptive-history
+/thumbs/
+/emms/
