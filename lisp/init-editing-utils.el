@@ -126,6 +126,7 @@
 (global-set-key (kbd "C-x C-m") 'execute-extended-command)
 
 ;; Use ace-window to switch windows quickly
+(require-package 'ace-window)
 (global-set-key (kbd "M-p") 'ace-window)
 
 ;; Vimmy alternatives to M-^ and C-u M-^
