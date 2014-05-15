@@ -114,6 +114,17 @@
 
 
 ;;----------------------------------------------------------------------------
+;; Use hunspell for spell checking program
+;;----------------------------------------------------------------------------
+(require-package 'rw-language-and-country-codes)
+(require-package 'rw-ispell)
+(require-package 'rw-hunspell)
+(when (executable-find "hunspell")
+  (setq ispell-program-name "hunspell")
+  (setq ispell-really-hunspell t))
+
+
+;;----------------------------------------------------------------------------
 ;; Rectangle selections, and overwrite text when the selection is active
 ;;----------------------------------------------------------------------------
 (cua-selection-mode t)                  ; for rectangles, CUA is nice
