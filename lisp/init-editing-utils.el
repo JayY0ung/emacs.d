@@ -157,7 +157,7 @@
 
 ;; Use ace-window to switch windows quickly
 (require-package 'ace-window)
-(global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "<f11>") 'ace-window)
 
 ;; Vimmy alternatives to M-^ and C-u M-^
 (global-set-key (kbd "C-c j") 'join-line)
