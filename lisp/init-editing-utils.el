@@ -159,7 +159,14 @@
 (require-package 'ace-window)
 (global-set-key (kbd "<f11>") 'ace-window)
 
-;; Vimmy alternatives to M-^ and C-u M-^
+;; Quickly find emacs lisp sources
+;; # From http://emacsredux.com/blog/2014/06/18/quickly-find-emacs-lisp-sources/
+(define-key 'help-command (kbd "C-l") 'find-library)
+(define-key 'help-command (kbd "C-f") 'find-function)
+(define-key 'help-command (kbd "C-k") 'find-function-on-key)
+(define-key 'help-command (kbd "C-v") 'find-variable)
+
+;; vimmy alternatives to M-^ and C-u M-^
 (global-set-key (kbd "C-c j") 'join-line)
 (global-set-key (kbd "C-c J") (lambda () (interactive) (join-line 1)))
 
