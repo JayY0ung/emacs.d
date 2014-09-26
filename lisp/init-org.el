@@ -21,7 +21,7 @@
       org-fast-tag-selection-single-key 'expert
       org-export-kill-product-buffer-when-displayed t
       org-tags-column 30
-      org-directory "~/org")
+      org-directory "~/git/org")
 
 ;;; highlight lines that go over 80 chars
 (add-hook 'org-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-green)))
