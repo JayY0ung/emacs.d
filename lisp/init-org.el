@@ -19,6 +19,7 @@
       org-agenda-include-diary t
       org-agenda-window-setup 'current-window
       org-fast-tag-selection-single-key 'expert
+      org-treat-S-cursor-todo-selection-as-state-change nil
       org-export-kill-product-buffer-when-displayed t
       org-tags-column 30
       org-directory "~/git/org")
