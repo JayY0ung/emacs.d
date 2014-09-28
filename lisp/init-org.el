@@ -24,6 +24,9 @@
       org-tags-column 30
       org-directory "~/git/org")
 
+;;; Setup `org-agenda-files'
+(setq org-agenda-files (quote ("~/git/GTD")))
+
 ;;; highlight lines that go over 80 chars
 (add-hook 'org-mode-hook '(lambda () (highlight-lines-matching-regexp ".\\{81\\}" 'hi-green)))
 
