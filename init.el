@@ -99,7 +99,6 @@
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
-(require 'init-marmalade)
 (require 'init-misc)
 
 (require 'init-dash)
