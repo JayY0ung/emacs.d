@@ -6,7 +6,6 @@
   (autoload 'org-mac-grab-link "org-mac-link" nil t)
   (require-package 'org-mac-iCal))
 
-
 (define-key global-map (kbd "C-c l") 'org-store-link)
 (define-key global-map (kbd "C-c a") 'org-agenda)
 
@@ -20,9 +19,10 @@
       org-agenda-window-setup 'current-window
       org-fast-tag-selection-single-key 'expert
       org-treat-S-cursor-todo-selection-as-state-change nil
+      org-html-validation-link nil
       org-export-kill-product-buffer-when-displayed t
       org-tags-column 30
-      org-directory "~/git/org")
+      org-directory "~/git/gtd")
 
 ;;; Setup `org-agenda-files'
 (setq org-agenda-files (quote ("~/git/gtd")))
