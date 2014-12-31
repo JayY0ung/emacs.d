@@ -33,6 +33,9 @@ site-lisp/
 /emms/
 /.smex-items
 /image-dired/
+<<<<<<< HEAD
 /ido.last
 /recentf
 /eshell
+/.cask/
+/.sx/
