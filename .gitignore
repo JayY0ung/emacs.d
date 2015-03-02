@@ -39,3 +39,4 @@ site-lisp/
 /eshell
 /.cask/
 /.sx/
+/org-clock-save.el
